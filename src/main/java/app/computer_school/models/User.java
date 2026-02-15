@@ -1,7 +1,7 @@
 package app.computer_school.models;
 
 public class User {
-    protected int id;
+    protected Long id;
     protected String firstname;
     protected String lastname;
     protected String middlename;
@@ -9,12 +9,16 @@ public class User {
     protected String phone;
     protected String email;
 
+    public User() {
+
+    }
+
     public User(
-            int id,
+            Long id,
             String firstname,
             String lastname,
             String middlename,
-            String bitrthDate,
+            String birthdate,
             String phone,
             String email
     ) {
@@ -22,16 +26,16 @@ public class User {
         this.firstname = firstname;
         this.lastname = lastname;
         this.middlename = middlename;
-        this.bitrthDate = bitrthDate;
+        this.bitrthDate = birthdate;
         this.phone = phone;
         this.email = email;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
