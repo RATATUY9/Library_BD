@@ -1,7 +1,6 @@
 package app.computer_school;
 
-import app.computer_school.models.User;
-import io.github.cdimascio.dotenv.Dotenv;
+import app.computer_school.controllers.ConsoleController;
 
 import java.sql.SQLException;
 
